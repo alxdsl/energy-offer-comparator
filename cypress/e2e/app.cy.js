@@ -1,4 +1,4 @@
-describe('Navigation', () => {
+ describe('Navigation', () => {
   it('should navigate to the italian page', () => {
     // Start from the france page
     cy.visit('http://localhost:3000/france')

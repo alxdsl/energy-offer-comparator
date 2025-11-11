@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 
-export const format = (str: string | ReactNode) => {
-  if (typeof str !== 'string') {
-    return str;
+export const format = (string_: string | ReactNode) => {
+  if (typeof string_ !== 'string') {
+    return string_;
   }
-  const formattedString = str.replace(/_/g, ' ');
+  const formattedString = string_.replaceAll('_', ' ');
   return formattedString.charAt(0).toUpperCase() + formattedString.slice(1);
 };

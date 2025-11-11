@@ -10,9 +10,9 @@ import styles from './styles.module.css'
 export default async function CountryPage({ params }: { params: { country: string } }) {
   const { country } = await params;
 
-  const countries = Array.from(new Set(
+  const countries = [...new Set(
     providersData.energy_providers.map((p) => p.country)
-  ));
+  )];
 
   const countriesToDisplay = countries.filter(c => c !== country);
 
@@ -21,10 +21,10 @@ export default async function CountryPage({ params }: { params: { country: strin
     (p) => p.country === country
   );
 
-  const countryProvidersIds = countryProviders.map((p) => p.id);
+  const countryProvidersIds = new Set(countryProviders.map((p) => p.id));
 
   const countryOffers = offersData.energy_offers.filter((o) =>
-    countryProvidersIds.includes(o.provider_id)
+    countryProvidersIds.has(o.provider_id)
   ).map(offer =>
     ({
       ...offer,

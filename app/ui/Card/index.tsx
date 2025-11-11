@@ -46,7 +46,7 @@ export default function Card({
         <a
           href={link.url}
           className={styles['card__link']}
-          onClick={(e) => e.preventDefault()}
+          onClick={(event) => event.preventDefault()}
         >
           {link.label}
 

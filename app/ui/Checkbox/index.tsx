@@ -22,7 +22,7 @@ export default function Checkbox({
   checked: boolean;
   unique?: boolean;
   Icon?: LucideIcon,
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   children: ReactNode;
   className?: string;
 }) {

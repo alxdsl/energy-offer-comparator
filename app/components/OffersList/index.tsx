@@ -42,21 +42,21 @@ export default function OffersList({ offers, providers, className }: { offers: O
 
   const filteredOffers = offers.filter((o) => {
     const matchesProvider =
-      !selectedProviders.length ||
+      selectedProviders.length === 0 ||
       selectedProviders.includes(
         providers.find((p) => p.id === o.provider_id)?.id || ''
       )
 
     const matchesType =
-      !selectedTypes.length ||
+      selectedTypes.length === 0 ||
       selectedTypes.includes(o.metadata.energy_type)
 
     const matchesContract =
-      !selectedContracts.length ||
+      selectedContracts.length === 0 ||
       selectedContracts.includes(o.metadata.contract_duration)
 
     const matchesGuarantee =
-      !selectedGuarantees.length ||
+      selectedGuarantees.length === 0 ||
       selectedGuarantees.includes(o.metadata.price_guarantee)
 
     return (
@@ -157,7 +157,7 @@ export default function OffersList({ offers, providers, className }: { offers: O
       </header>
 
       <div className={styles['offersList__list']}>
-        {!filteredOffers.length && (
+        {filteredOffers.length === 0 && (
           <p className={styles['offersList__empty']}>
             No offers match the selected filters. Please adjust your filters to see available offers.
           </p>

@@ -10,7 +10,7 @@ type ToggleOption = {
   Icon?: LucideIcon,
   value: string;
   checked: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export default function Toggle({

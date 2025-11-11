@@ -18,13 +18,13 @@ export function useUrlFilter(
 ): SingleFilterReturn;
 export function useUrlFilter({ paramName, isMulti }: { paramName: string; isMulti: boolean }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const searchParameters = useSearchParams();
 
   const initialValue = useMemo(() => {
-    const param = searchParams.get(paramName);
-    if (!param) return isMulti ? [] : "";
-    return isMulti ? param.split(',') : param;
-  }, [searchParams, paramName, isMulti]);
+    const parameter = searchParameters.get(paramName);
+    if (!parameter) return isMulti ? [] : "";
+    return isMulti ? parameter.split(',') : parameter;
+  }, [searchParameters, paramName, isMulti]);
 
   const [selectedValue, setSelectedValue] = useState<typeof initialValue>(initialValue);
   const [pendingUpdate, setPendingUpdate] = useState<{ paramName: string; value: string | string[] } | null>(null);
@@ -36,28 +36,28 @@ export function useUrlFilter({ paramName, isMulti }: { paramName: string; isMult
   useEffect(() => {
     if (pendingUpdate) {
       const { paramName, value } = pendingUpdate;
-      const params = new URLSearchParams(searchParams.toString());
+      const parameters = new URLSearchParams(searchParameters.toString());
 
       if (isMulti) {
         const newSelected = value as string[];
         if (newSelected.length > 0) {
-          params.set(paramName, newSelected.join(','));
+          parameters.set(paramName, newSelected.join(','));
         } else {
-          params.delete(paramName);
+          parameters.delete(paramName);
         }
       } else {
         const newValue = value as string;
         if (newValue) {
-          params.set(paramName, newValue);
+          parameters.set(paramName, newValue);
         } else {
-          params.delete(paramName);
+          parameters.delete(paramName);
         }
       }
 
-      router.replace(`?${params.toString()}`);
+      router.replace(`?${parameters.toString()}`);
       setPendingUpdate(null);
     }
-  }, [pendingUpdate, paramName, isMulti, searchParams, router]);
+  }, [pendingUpdate, paramName, isMulti, searchParameters, router]);
 
   const toggleValue = useCallback((value: string | string[]) => {
     if (isMulti) {

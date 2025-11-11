@@ -12,9 +12,9 @@ import { useIsMobile } from '@/hooks/useIsMobile';
 
 export default function FilterBar({ providers, offers, className }: { providers: Provider[]; offers: Offer[]; className?: string; }) {
   // We hide providers without offers based on countryOffers
-  const displayedProviders = offers.map(o => o.provider_id);
+  const displayedProviders = new Set(offers.map(o => o.provider_id));
   const filteredCountryProviders = providers.filter(p =>
-    displayedProviders.includes(p.id)
+    displayedProviders.has(p.id)
   );
 
   const [selectedProviders, toggleProvider] = useUrlFilter({
@@ -36,9 +36,9 @@ export default function FilterBar({ providers, offers, className }: { providers:
   const isMobile = useIsMobile();
   const [shouldDisplayFiltersButton, setShouldDisplayFiltersButton] = useState<boolean>(false);
 
-  const energyTypeOptions = Array.from(new Set(offers.map(offer => offer.metadata.energy_type))).sort((a, b) => a.localeCompare(b));
-  const contractDurationOptions = Array.from(new Set(offers.map(offer => offer.metadata.contract_duration))).sort((a, b) => a.localeCompare(b));
-  const priceGuaranteeOptions = Array.from(new Set(offers.map(offer => offer.metadata.price_guarantee))).sort((a, b) => a.localeCompare(b));
+  const energyTypeOptions = [...new Set(offers.map(offer => offer.metadata.energy_type))].sort((a, b) => a.localeCompare(b));
+  const contractDurationOptions = [...new Set(offers.map(offer => offer.metadata.contract_duration))].sort((a, b) => a.localeCompare(b));
+  const priceGuaranteeOptions = [...new Set(offers.map(offer => offer.metadata.price_guarantee))].sort((a, b) => a.localeCompare(b));
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function FilterBar({ providers, offers, className }: { providers:
         className={
           `${styles.filters}` +
           (className ? ` ${className}` : '') +
-          (!shouldDisplayFiltersButton ? ` ${styles['filters--hidden']}` : '')
+          (shouldDisplayFiltersButton ? '' : ` ${styles['filters--hidden']}`)
         }
       >
         <Accordion title="Providers" className={styles['filters__accordion']}>
@@ -58,7 +58,7 @@ export default function FilterBar({ providers, offers, className }: { providers:
                   name="provider_name"
                   value={provider.id}
                   checked={selectedProviders.includes(provider.id)}
-                  onChange={(e) => toggleProvider(e.target.value)}
+                  onChange={(event) => toggleProvider(event.target.value)}
                 >
                   {provider.display_name}
                 </Checkbox>
@@ -76,7 +76,7 @@ export default function FilterBar({ providers, offers, className }: { providers:
                   name="type"
                   value={type}
                   checked={selectedTypes.includes(type)}
-                  onChange={(e) => toggleType(e.target.value)}
+                  onChange={(event) => toggleType(event.target.value)}
                 >
                   {type}
                 </Checkbox>
@@ -94,7 +94,7 @@ export default function FilterBar({ providers, offers, className }: { providers:
                   name="contract"
                   value={contract}
                   checked={selectedContracts.includes(contract)}
-                  onChange={(e) => toggleContract(e.target.value)}
+                  onChange={(event) => toggleContract(event.target.value)}
                 >
                   {contract}
                 </Checkbox>
@@ -112,7 +112,7 @@ export default function FilterBar({ providers, offers, className }: { providers:
                   name="guarantee"
                   value={guarantee}
                   checked={selectedGuarantees.includes(guarantee)}
-                  onChange={(e) => toggleGuarantee(e.target.value)}
+                  onChange={(event) => toggleGuarantee(event.target.value)}
                 >
                   {guarantee}
                 </Checkbox>
