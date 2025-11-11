@@ -11,7 +11,7 @@
   margin: 0;
   font-size: 0.9em;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
 }
 
 .card__title {
@@ -22,17 +22,17 @@
 }
 
 .card__description {
-  margin: 1em 0;
+  margin: 0.75em 0;
   font-size: 1em;
 }
 
 .card__more {
   display: flex;
-  gap: 0.5em;
+  gap: 0.25em;
   flex-direction: column;
   list-style: none;
   padding: 0;
-  margin: 1em 0 2em;
+  margin: auto 0 1.5em;
 
   :global(.lucide) {
     width: 0.8em;
@@ -42,8 +42,20 @@
   }
 }
 
+.card__moreItem {
+  &::before {
+    content: '•';
+    margin-right: 0.5em;
+    color: var(--primary-color);
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
 .card__footer {
-  margin: auto 0 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

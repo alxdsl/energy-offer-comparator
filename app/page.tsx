@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     router.replace('/france');
-  }, []);
+  });
 
-  return null; // ou un loader
+  return null;
 }

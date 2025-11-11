@@ -1,6 +1,6 @@
 'use client'
 
-import { ExternalLink, Info, LucideIcon } from 'lucide-react'
+import { ExternalLink, Info } from 'lucide-react'
 
 import styles from './styles.module.css'
 
@@ -17,7 +17,7 @@ export default function Card({
   title: string
   subtitle: string
   description: string
-  additionalData: { label: string; value: string; Icon: LucideIcon }[]
+  additionalData: { label: string; value: string }[]
   price: string
   priceTooltip?: string
   link: { label: string; url: string }
@@ -30,8 +30,8 @@ export default function Card({
       <p className={styles['card__description']}>{description}</p>
       <ul className={styles['card__more']}>
         {additionalData.map((data) => (
-          <li key={data.label}>
-            <data.Icon /> {data.label}: {data.value}
+          <li key={data.label} className={styles['card__moreItem']}>
+            {data.label}: <strong>{data.value}</strong>
           </li>
         ))}
       </ul>

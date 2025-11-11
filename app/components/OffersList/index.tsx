@@ -2,7 +2,7 @@
 
 import { useEffect, useState} from 'react';
 
-import { ArrowDownWideNarrow, ArrowUpToLine, ArrowUpWideNarrow, ReceiptText, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowDownWideNarrow, ArrowUpToLine, ArrowUpWideNarrow } from 'lucide-react';
 
 import type { Provider, Offer } from '@/types'
 
@@ -171,17 +171,14 @@ export default function OffersList({ offers, providers, className }: { offers: O
             {
               label: 'Energy Type',
               value: format(o.metadata.energy_type) as string || 'N/A',
-              Icon: Zap,
             },
             {
               label: 'Contract Duration',
               value: format(o.metadata.contract_duration) as string || 'N/A',
-              Icon: ReceiptText
             },
             {
               label: 'Price Guarantee',
               value: format(o.metadata.price_guarantee) as string || 'N/A',
-              Icon: ShieldCheck
             }
           ]
 
