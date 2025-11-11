@@ -1,0 +1,27 @@
+.accordion {
+  &[open] .accordion__title::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+
+  &::marker {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    border: solid var(--primary-color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+  }
+}

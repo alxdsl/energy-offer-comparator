@@ -1,0 +1,340 @@
+{
+  "energy_offers": [
+    {
+      "id": "offer_fr_001_01",
+      "slug": "voltaire-energie-classique",
+      "name": "Voltaire Classique",
+      "description": "Offre d'électricité standard avec prix fixe pendant 2 ans",
+      "provider_id": "fr_001",
+      "consumption_pricing": 0.1845,
+      "subscription_cost": 120.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_001_02",
+      "slug": "voltaire-energie-verte",
+      "name": "Voltaire Vert",
+      "description": "Électricité 100% verte d'origine renouvelable",
+      "provider_id": "fr_001",
+      "consumption_pricing": 0.1975,
+      "subscription_cost": 135.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_001_03",
+      "slug": "voltaire-energie-flexible",
+      "name": "Voltaire Flexible",
+      "description": "Tarif indexé sur le marché, sans engagement",
+      "provider_id": "fr_001",
+      "consumption_pricing": 0.172,
+      "subscription_cost": 95.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "no commitment",
+        "price_guarantee": "indexed"
+      }
+    },
+    {
+      "id": "offer_fr_002_01",
+      "slug": "lumiere-verte-eco",
+      "name": "Lumière Éco",
+      "description": "Électricité verte à prix réduit pour les foyers économes",
+      "provider_id": "fr_002",
+      "consumption_pricing": 0.165,
+      "subscription_cost": 108.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "12 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_002_02",
+      "slug": "lumiere-verte-premium",
+      "name": "Lumière Premium",
+      "description": "Offre premium avec électricité verte certifiée et service client dédié",
+      "provider_id": "fr_002",
+      "consumption_pricing": 0.21,
+      "subscription_cost": 180.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_002_03",
+      "slug": "lumiere-verte-nuit",
+      "name": "Lumière Nuit",
+      "description": "Tarif heures creuses avantageux pour optimiser vos consommations",
+      "provider_id": "fr_002",
+      "consumption_pricing": 0.142,
+      "subscription_cost": 125.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "18 months",
+        "price_guarantee": "dual_rate"
+      }
+    },
+    {
+      "id": "offer_fr_003_01",
+      "slug": "energie-bleue-standard",
+      "name": "Bleue Standard",
+      "description": "Offre d'électricité standard avec prix compétitif",
+      "provider_id": "fr_003",
+      "consumption_pricing": 0.178,
+      "subscription_cost": 115.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_003_02",
+      "slug": "energie-bleue-marine",
+      "name": "Bleue Marine",
+      "description": "Électricité d'origine éolienne offshore",
+      "provider_id": "fr_003",
+      "consumption_pricing": 0.195,
+      "subscription_cost": 140.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_003_03",
+      "slug": "energie-bleue-connect",
+      "name": "Bleue Connect",
+      "description": "Offre connectée avec suivi en temps réel de votre consommation",
+      "provider_id": "fr_003",
+      "consumption_pricing": 0.1825,
+      "subscription_cost": 130.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_004_01",
+      "slug": "power-france-basic",
+      "name": "Power Basic",
+      "description": "Électricité au meilleur prix pour tous",
+      "provider_id": "fr_004",
+      "consumption_pricing": 0.169,
+      "subscription_cost": 100.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "12 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_004_02",
+      "slug": "power-france-green",
+      "name": "Power Green",
+      "description": "Électricité 100% renouvelable certifiée",
+      "provider_id": "fr_004",
+      "consumption_pricing": 0.189,
+      "subscription_cost": 145.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_fr_004_03",
+      "slug": "power-france-smart",
+      "name": "Power Smart",
+      "description": "Tarif intelligent qui s'adapte à vos habitudes de consommation",
+      "provider_id": "fr_004",
+      "consumption_pricing": 0.1755,
+      "subscription_cost": 120.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "18 months",
+        "price_guarantee": "dynamic"
+      }
+    },
+    {
+      "id": "offer_it_001_01",
+      "slug": "energia-italiana-casa",
+      "name": "Casa Italiana",
+      "description": "Offerta elettrica per la casa con prezzo fisso",
+      "provider_id": "it_001",
+      "consumption_pricing": 0.215,
+      "subscription_cost": 135.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_it_001_02",
+      "slug": "energia-italiana-verde",
+      "name": "Verde Italiana",
+      "description": "Energia 100% rinnovabile per un futuro sostenibile",
+      "provider_id": "it_001",
+      "consumption_pricing": 0.228,
+      "subscription_cost": 160.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_it_001_03",
+      "slug": "energia-italiana-flex",
+      "name": "Flex Italiana",
+      "description": "Tariffa flessibile indicizzata al mercato",
+      "provider_id": "it_001",
+      "consumption_pricing": 0.205,
+      "subscription_cost": 110.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "no commitment",
+        "price_guarantee": "indexed"
+      }
+    },
+    {
+      "id": "offer_it_002_01",
+      "slug": "volta-power-standard",
+      "name": "Volta Standard",
+      "description": "Elettricità a prezzo competitivo per tutti",
+      "provider_id": "it_002",
+      "consumption_pricing": 0.208,
+      "subscription_cost": 125.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_it_002_02",
+      "slug": "volta-power-solar",
+      "name": "Volta Solar",
+      "description": "Energia solare certificata per la tua casa",
+      "provider_id": "it_002",
+      "consumption_pricing": 0.22,
+      "subscription_cost": 150.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_it_002_03",
+      "slug": "volta-power-notte",
+      "name": "Volta Notte",
+      "description": "Tariffa bioraria conveniente per le ore notturne",
+      "provider_id": "it_002",
+      "consumption_pricing": 0.195,
+      "subscription_cost": 130.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "18 months",
+        "price_guarantee": "dual_rate"
+      }
+    },
+    {
+      "id": "offer_es_001_01",
+      "slug": "energia-espana-hogar",
+      "name": "Energía Hogar",
+      "description": "Electricidad para el hogar con precio fijo garantizado",
+      "provider_id": "es_001",
+      "consumption_pricing": 0.195,
+      "subscription_cost": 120.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "24 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_es_001_02",
+      "slug": "energia-espana-verde",
+      "name": "Energía Verde",
+      "description": "Electricidad 100% renovable certificada",
+      "provider_id": "es_001",
+      "consumption_pricing": 0.208,
+      "subscription_cost": 145.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_es_001_03",
+      "slug": "energia-espana-flexible",
+      "name": "Energía Flexible",
+      "description": "Tarifa indexada sin permanencia",
+      "provider_id": "es_001",
+      "consumption_pricing": 0.182,
+      "subscription_cost": 95.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "no commitment",
+        "price_guarantee": "indexed"
+      }
+    },
+    {
+      "id": "offer_es_002_01",
+      "slug": "sol-power-basico",
+      "name": "Sol Básico",
+      "description": "Electricidad básica al mejor precio",
+      "provider_id": "es_002",
+      "consumption_pricing": 0.188,
+      "subscription_cost": 110.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "12 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_es_002_02",
+      "slug": "sol-power-solar",
+      "name": "Sol Solar",
+      "description": "Energía solar pura para tu hogar",
+      "provider_id": "es_002",
+      "consumption_pricing": 0.215,
+      "subscription_cost": 155.0,
+      "metadata": {
+        "energy_type": "green",
+        "contract_duration": "36 months",
+        "price_guarantee": "fixed"
+      }
+    },
+    {
+      "id": "offer_es_002_03",
+      "slug": "sol-power-inteligente",
+      "name": "Sol Inteligente",
+      "description": "Tarifa inteligente que se adapta a tu consumo",
+      "provider_id": "es_002",
+      "consumption_pricing": 0.192,
+      "subscription_cost": 125.0,
+      "metadata": {
+        "energy_type": "mixed",
+        "contract_duration": "18 months",
+        "price_guarantee": "dynamic"
+      }
+    }
+  ]
+}

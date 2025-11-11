@@ -1,0 +1,100 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: rgb(from var(--primary-color) r g b / 0.02);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 0.5em;
+}
+
+.card__subtitle {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.card__description {
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+.card__more {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 2em;
+
+  :global(.lucide) {
+    width: 0.8em;
+    height: 0.8em;
+    flex-shrink: 0;
+    color: var(--foreground);
+  }
+}
+
+.card__footer {
+  margin: auto 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  gap: 0.25em;
+  align-items: center;
+  text-align: left;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: help;
+
+  &:hover .card__priceTooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.card__priceTooltip {
+  position: absolute;
+  bottom: calc(100% + 0.25em);
+  left: 0;
+  background-color: var(--primary-color);
+  color: var(--background);
+  padding: 0.5em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card__icon {
+  width: 1em;
+  height: 1em;
+}
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  text-decoration: none;
+  color: var(--foreground);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

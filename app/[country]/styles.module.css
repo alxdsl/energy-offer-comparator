@@ -1,0 +1,57 @@
+.page {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  gap: 1em;
+  align-items: start;
+  padding: 4em 2em;
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "sidebar footer";
+    grid-template-columns: 280px 1fr;
+    gap: 2em;
+    padding: 3em 2em;
+  }
+}
+
+.page__header {
+  grid-area: header;
+}
+
+.page__filters {
+  grid-area: sidebar;
+}
+
+.page__list {
+  grid-area: main;
+}
+
+.page__footer {
+  grid-area: footer;
+  font-size: 0.875em;
+}
+
+.page__title {
+  margin: 0;
+}
+
+.page__navList {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-color);
+
+  a {
+    color: inherit;
+  }
+}

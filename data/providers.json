@@ -1,0 +1,220 @@
+{
+  "energy_providers": [
+    {
+      "id": "fr_001",
+      "slug": "voltaire-energie",
+      "display_name": "Voltaire Énergie",
+      "country": "france"
+    },
+    {
+      "id": "fr_002",
+      "slug": "lumiere-verte",
+      "display_name": "Lumière Verte",
+      "country": "france"
+    },
+    {
+      "id": "fr_003",
+      "slug": "energie-bleue",
+      "display_name": "Énergie Bleue",
+      "country": "france"
+    },
+    {
+      "id": "fr_004",
+      "slug": "power-france",
+      "display_name": "Power France",
+      "country": "france"
+    },
+    {
+      "id": "fr_005",
+      "slug": "eco-watts",
+      "display_name": "Eco-Watts",
+      "country": "france"
+    },
+    {
+      "id": "fr_006",
+      "slug": "france-solaire",
+      "display_name": "France Solaire",
+      "country": "france"
+    },
+    {
+      "id": "fr_007",
+      "slug": "energie-plus",
+      "display_name": "Énergie Plus",
+      "country": "france"
+    },
+    {
+      "id": "fr_008",
+      "slug": "nouvelle-energie",
+      "display_name": "Nouvelle Énergie",
+      "country": "france"
+    },
+    {
+      "id": "fr_009",
+      "slug": "dynamo-france",
+      "display_name": "Dynamo France",
+      "country": "france"
+    },
+    {
+      "id": "fr_010",
+      "slug": "electro-ciel",
+      "display_name": "Électro-Ciel",
+      "country": "france"
+    },
+    {
+      "id": "fr_011",
+      "slug": "energie-libre",
+      "display_name": "Énergie Libre",
+      "country": "france"
+    },
+    {
+      "id": "fr_012",
+      "slug": "watt-eco",
+      "display_name": "Watt Éco",
+      "country": "france"
+    },
+    {
+      "id": "it_001",
+      "slug": "energia-italiana",
+      "display_name": "Energia Italiana",
+      "country": "italy"
+    },
+    {
+      "id": "it_002",
+      "slug": "volta-power",
+      "display_name": "Volta Power",
+      "country": "italy"
+    },
+    {
+      "id": "it_003",
+      "slug": "sole-energia",
+      "display_name": "Sole Energia",
+      "country": "italy"
+    },
+    {
+      "id": "it_004",
+      "slug": "power-italia",
+      "display_name": "Power Italia",
+      "country": "italy"
+    },
+    {
+      "id": "it_005",
+      "slug": "energia-verde",
+      "display_name": "Energia Verde",
+      "country": "italy"
+    },
+    {
+      "id": "it_006",
+      "slug": "elettrico-blu",
+      "display_name": "Elettrico Blu",
+      "country": "italy"
+    },
+    {
+      "id": "it_007",
+      "slug": "energia-nuova",
+      "display_name": "Energia Nuova",
+      "country": "italy"
+    },
+    {
+      "id": "it_008",
+      "slug": "watt-italia",
+      "display_name": "Watt Italia",
+      "country": "italy"
+    },
+    {
+      "id": "it_009",
+      "slug": "energia-moderna",
+      "display_name": "Energia Moderna",
+      "country": "italy"
+    },
+    {
+      "id": "it_010",
+      "slug": "corrente-libera",
+      "display_name": "Corrente Libera",
+      "country": "italy"
+    },
+    {
+      "id": "it_011",
+      "slug": "energia-pulita",
+      "display_name": "Energia Pulita",
+      "country": "italy"
+    },
+    {
+      "id": "it_012",
+      "slug": "power-sicilia",
+      "display_name": "Power Sicilia",
+      "country": "italy"
+    },
+    {
+      "id": "es_001",
+      "slug": "energia-espana",
+      "display_name": "Energía España",
+      "country": "spain"
+    },
+    {
+      "id": "es_002",
+      "slug": "sol-power",
+      "display_name": "Sol Power",
+      "country": "spain"
+    },
+    {
+      "id": "es_003",
+      "slug": "energia-verde-es",
+      "display_name": "Energía Verde",
+      "country": "spain"
+    },
+    {
+      "id": "es_004",
+      "slug": "power-madrid",
+      "display_name": "Power Madrid",
+      "country": "spain"
+    },
+    {
+      "id": "es_005",
+      "slug": "energia-libre",
+      "display_name": "Energía Libre",
+      "country": "spain"
+    },
+    {
+      "id": "es_006",
+      "slug": "voltios-spain",
+      "display_name": "Voltios Spain",
+      "country": "spain"
+    },
+    {
+      "id": "es_007",
+      "slug": "energia-nueva",
+      "display_name": "Energía Nueva",
+      "country": "spain"
+    },
+    {
+      "id": "es_008",
+      "slug": "electrica-moderna",
+      "display_name": "Eléctrica Moderna",
+      "country": "spain"
+    },
+    {
+      "id": "es_009",
+      "slug": "energia-azul",
+      "display_name": "Energía Azul",
+      "country": "spain"
+    },
+    {
+      "id": "es_010",
+      "slug": "power-cataluna",
+      "display_name": "Power Cataluña",
+      "country": "spain"
+    },
+    {
+      "id": "es_011",
+      "slug": "energia-sostenible",
+      "display_name": "Energía Sostenible",
+      "country": "spain"
+    },
+    {
+      "id": "es_012",
+      "slug": "watt-espana",
+      "display_name": "Watt España",
+      "country": "spain"
+    }
+  ]
+}

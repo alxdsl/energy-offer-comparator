@@ -1,0 +1,48 @@
+.offersList__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.offersList__toggles {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+}
+
+.offersList__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+  background-color: var(--background-secondary);
+}
+
+.offersList__title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.offersList__empty {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-weight: bold;
+
+  button {
+    display: contents;
+    color: var(--primary-color);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+  }
+}
+
+.offersList__scroll {
+  left: auto;
+  right: 1em;
+}
