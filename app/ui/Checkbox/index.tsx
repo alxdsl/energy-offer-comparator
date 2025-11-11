@@ -1,9 +1,12 @@
 'use client'
 
 import { ReactNode } from "react";
+
 import { LucideIcon } from "lucide-react";
-import styles from "./styles.module.css";
+
 import { format } from "@/app/utils/formatting";
+
+import styles from "./styles.module.css";
 
 export default function Checkbox({
   id,

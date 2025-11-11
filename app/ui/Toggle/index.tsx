@@ -1,8 +1,11 @@
 'use client'
 
 import { ReactNode } from "react";
+
 import { LucideIcon } from "lucide-react";
+
 import Checkbox from "@/app/ui/Checkbox";
+
 import styles from "./styles.module.css";
 
 type ToggleOption = {

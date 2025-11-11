@@ -1,6 +1,7 @@
 'use client'
 
 import { ReactNode } from "react";
+
 import styles from "./styles.module.css";
 
 export default function Accordion({ title, children, className }: { title: string; children: ReactNode; className?: string; }) {

@@ -1,5 +1,6 @@
-import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useMemo, useCallback } from 'react';
+
+import { useRouter, useSearchParams } from 'next/navigation';
 
 type MultiFilterReturn = [
   string[],

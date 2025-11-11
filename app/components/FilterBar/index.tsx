@@ -1,14 +1,18 @@
 'use client'
 
 import { useState } from 'react';
+
 import { Check, SlidersHorizontal } from 'lucide-react';
+
 import type { Provider, Offer } from '@/types'
-import styles from './styles.module.css'
+
 import Accordion from '@/app/ui/Accordion';
 import Button from '@/app/ui/Button';
 import Checkbox from '@/app/ui/Checkbox';
-import { useUrlFilter } from '@/hooks/useUrlFilter';
 import { useIsMobile } from '@/hooks/useIsMobile';
+import { useUrlFilter } from '@/hooks/useUrlFilter';
+
+import styles from './styles.module.css'
 
 export default function FilterBar({ providers, offers, className }: { providers: Provider[]; offers: Offer[]; className?: string; }) {
   // We hide providers without offers based on countryOffers

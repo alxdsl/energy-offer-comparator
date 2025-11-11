@@ -12,6 +12,25 @@ const eslintConfig = defineConfig([
       'unicorn/no-array-sort': 'off',
       'unicorn/filename-case': 'off',
       'unicorn/no-null': 'off',
+      'import/order': [
+        'error',
+        {
+          groups: [
+            'builtin', // node:fs, node:path
+            'external', // react, next, lodash
+            'type', // import type { ... }
+            'internal', // @/components, ~/utils
+            'sibling', // ./component
+            'parent', // ../component
+            'index', // ./
+            'object', // import log = console.log
+          ],
+          'newlines-between': 'always',
+          pathGroupsExcludedImportTypes: ['react'],
+          alphabetize: { order: 'asc', caseInsensitive: true },
+          pathGroups: [{ pattern: 'react', group: 'external', position: 'before' }], // React always goes first
+        },
+      ],
     }
   },
   // Override default ignores of eslint-config-next.

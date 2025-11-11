@@ -1,9 +1,10 @@
 import NextLink from "next/link"
+
 import FilterBar from '@/app/components/FilterBar'
 import OffersList from '@/app/components/OffersList'
+import { calculateOfferPrices } from '@/app/utils/pricing'
 import offersData from '@/data/offers.json'
 import providersData from '@/data/providers.json'
-import { calculateOfferPrices } from '@/app/utils/pricing'
 
 import styles from './styles.module.css'
 

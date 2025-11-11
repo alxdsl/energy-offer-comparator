@@ -1,14 +1,17 @@
 'use client'
 
 import { useEffect, useState} from 'react';
+
 import { ArrowDownWideNarrow, ArrowUpToLine, ArrowUpWideNarrow, ReceiptText, ShieldCheck, Zap } from 'lucide-react';
+
+import type { Provider, Offer } from '@/types'
+
 import Button from '@/app/ui/Button'
 import Card from '@/app/ui/Card'
 import Toggle from '@/app/ui/Toggle';
-import type { Provider, Offer } from '@/types'
-import { useUrlFilter } from '@/hooks/useUrlFilter';
-import { useIsMobile } from '@/hooks/useIsMobile';
 import { format } from '@/app/utils/formatting';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import { useUrlFilter } from '@/hooks/useUrlFilter';
 
 import styles from './styles.module.css'
 
